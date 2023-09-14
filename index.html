@@ -1,0 +1,37 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <title>Make it into Anime!</title>
+    <meta charset="uft-8" />
+    <style>
+      div {
+        text-align: center;
+      }
+      img {
+        width: 400;
+        height: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="cat.jpg" />
+      <img src="cat.jpg" />
+    </div>
+    <div>
+      <button onclick="makeItAnime()">Make it into Anime!</button>
+    </div>
+
+    <script>
+      "use strict";
+
+      function makeItAnime() {
+        let anime = document.getElementsByTagName("img");
+        for (let i = 0; i < anime.length; i++) {
+          anime[i].src = "animecat" + i + ".jpg";
+        }
+        console.log("Função executada");
+      }
+    </script>
+  </body>
+</html>
